@@ -1,0 +1,36 @@
+fs.c: In function ‘fs_format’:
+fs.c:160:28: warning: ‘freePage’ may be used uninitialized [-Wmaybe-uninitialized]
+  160 |             freePage->next = 0;
+      |             ~~~~~~~~~~~~~~~^~~
+fs.c: In function ‘fs_format’:
+fs.c:160:28: warning: ‘freePage’ may be used uninitialized [-Wmaybe-uninitialized]
+  160 |             freePage->next = 0;
+      |             ~~~~~~~~~~~~~~~^~~
+/usr/bin/ld: /tmp/ccpYoSYJ.o: na função "fs_ops_test":
+/home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:134: referência não definida para "fs_write_file"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:136: referência não definida para "fs_mkdir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:138: referência não definida para "fs_write_file"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:141: referência não definida para "fs_list_dir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:146: referência não definida para "fs_list_dir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:152: referência não definida para "fs_unlink"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:155: referência não definida para "fs_list_dir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:160: referência não definida para "fs_unlink"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:162: referência não definida para "fs_rmdir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test5.c:165: referência não definida para "fs_list_dir"
+collect2: error: ld returned 1 exit status
+fs.c: In function ‘fs_format’:
+fs.c:160:28: warning: ‘freePage’ may be used uninitialized [-Wmaybe-uninitialized]
+  160 |             freePage->next = 0;
+      |             ~~~~~~~~~~~~~~~^~~
+/usr/bin/ld: /tmp/ccFjZqNN.o: na função "fs_ops_test":
+/home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:144: referência não definida para "fs_write_file"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:146: referência não definida para "fs_mkdir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:148: referência não definida para "fs_write_file"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:151: referência não definida para "fs_list_dir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:156: referência não definida para "fs_list_dir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:162: referência não definida para "fs_unlink"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:165: referência não definida para "fs_list_dir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:170: referência não definida para "fs_unlink"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:172: referência não definida para "fs_rmdir"
+/usr/bin/ld: /home/thais/Documentos/GitHub/TPs_SistemasOperacionais/TP4_Extra_SistemasDeArquivo_dcc605fs/tests/test6.c:175: referência não definida para "fs_list_dir"
+collect2: error: ld returned 1 exit status
