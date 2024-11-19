@@ -1,0 +1,205 @@
+diff --git a/xv6-riscv/.git/index b/xv6-riscv-modified/.git/index
+index e26b9f6..45ea2c9 100644
+Binary files a/xv6-riscv/.git/index and b/xv6-riscv-modified/.git/index differ
+diff --git a/xv6-riscv/.git/logs/HEAD b/xv6-riscv-modified/.git/logs/HEAD
+index 1cb1bb2..74d30c5 100644
+--- a/xv6-riscv/.git/logs/HEAD
++++ b/xv6-riscv-modified/.git/logs/HEAD
+@@ -1 +1 @@
+-0000000000000000000000000000000000000000 f5b93ef12f7159f74f80f94729ee4faabe42c360 ana <ana@LAPTOP-JSUDG6SJ> 1715629105 -0300	clone: from https://github.com/mit-pdos/xv6-riscv.git
++0000000000000000000000000000000000000000 f5b93ef12f7159f74f80f94729ee4faabe42c360 ana <ana@LAPTOP-JSUDG6SJ> 1715628190 -0300	clone: from https://github.com/mit-pdos/xv6-riscv.git
+diff --git a/xv6-riscv/.git/logs/refs/heads/riscv b/xv6-riscv-modified/.git/logs/refs/heads/riscv
+index 1cb1bb2..74d30c5 100644
+--- a/xv6-riscv/.git/logs/refs/heads/riscv
++++ b/xv6-riscv-modified/.git/logs/refs/heads/riscv
+@@ -1 +1 @@
+-0000000000000000000000000000000000000000 f5b93ef12f7159f74f80f94729ee4faabe42c360 ana <ana@LAPTOP-JSUDG6SJ> 1715629105 -0300	clone: from https://github.com/mit-pdos/xv6-riscv.git
++0000000000000000000000000000000000000000 f5b93ef12f7159f74f80f94729ee4faabe42c360 ana <ana@LAPTOP-JSUDG6SJ> 1715628190 -0300	clone: from https://github.com/mit-pdos/xv6-riscv.git
+diff --git a/xv6-riscv/.git/logs/refs/remotes/origin/HEAD b/xv6-riscv-modified/.git/logs/refs/remotes/origin/HEAD
+index 1cb1bb2..74d30c5 100644
+--- a/xv6-riscv/.git/logs/refs/remotes/origin/HEAD
++++ b/xv6-riscv-modified/.git/logs/refs/remotes/origin/HEAD
+@@ -1 +1 @@
+-0000000000000000000000000000000000000000 f5b93ef12f7159f74f80f94729ee4faabe42c360 ana <ana@LAPTOP-JSUDG6SJ> 1715629105 -0300	clone: from https://github.com/mit-pdos/xv6-riscv.git
++0000000000000000000000000000000000000000 f5b93ef12f7159f74f80f94729ee4faabe42c360 ana <ana@LAPTOP-JSUDG6SJ> 1715628190 -0300	clone: from https://github.com/mit-pdos/xv6-riscv.git
+diff --git a/xv6-riscv/Makefile b/xv6-riscv-modified/Makefile
+index 39a99d7..7c7d54c 100644
+--- a/xv6-riscv/Makefile
++++ b/xv6-riscv-modified/Makefile
+@@ -132,6 +132,7 @@ UPROGS=\
+ 	$U/_grind\
+ 	$U/_wc\
+ 	$U/_zombie\
++	$U/_getcnt\
+ 
+ fs.img: mkfs/mkfs README $(UPROGS)
+ 	mkfs/mkfs fs.img README $(UPROGS)
+diff --git a/xv6-riscv/kernel/param.h b/xv6-riscv-modified/kernel/param.h
+index 6624bff..600fab1 100644
+--- a/xv6-riscv/kernel/param.h
++++ b/xv6-riscv-modified/kernel/param.h
+@@ -11,3 +11,4 @@
+ #define NBUF         (MAXOPBLOCKS*3)  // size of disk block cache
+ #define FSSIZE       2000  // size of file system in blocks
+ #define MAXPATH      128   // maximum file path name
++#define NSYSCALLS 22 // number of system calls
+diff --git a/xv6-riscv/kernel/proc.c b/xv6-riscv-modified/kernel/proc.c
+index 959b778..a9b318e 100644
+--- a/xv6-riscv/kernel/proc.c
++++ b/xv6-riscv-modified/kernel/proc.c
+@@ -119,6 +119,10 @@ allocproc(void)
+       release(&p->lock);
+     }
+   }
++  //Initialize the syscall_count array for the process to 0 for each valid syscall
++  for (int i = 0; i < NSYSCALLS; i++) {
++    p->syscall_count[i] = 0;
++  }
+   return 0;
+ 
+ found:
+diff --git a/xv6-riscv/kernel/proc.h b/xv6-riscv-modified/kernel/proc.h
+index d021857..f7c9e29 100644
+--- a/xv6-riscv/kernel/proc.h
++++ b/xv6-riscv-modified/kernel/proc.h
+@@ -91,6 +91,8 @@ struct proc {
+   int killed;                  // If non-zero, have been killed
+   int xstate;                  // Exit status to be returned to parent's wait
+   int pid;                     // Process ID
++  int syscall_count[NSYSCALLS]; // Counters for syscalls to keep track of how many
++                                // times each syscall has been called
+ 
+   // wait_lock must be held when using this:
+   struct proc *parent;         // Parent process
+diff --git a/xv6-riscv/kernel/syscall.c b/xv6-riscv-modified/kernel/syscall.c
+index ed65409..ae8cb15 100644
+--- a/xv6-riscv/kernel/syscall.c
++++ b/xv6-riscv-modified/kernel/syscall.c
+@@ -7,6 +7,12 @@
+ #include "syscall.h"
+ #include "defs.h"
+ 
++/*
++Create a global array to keep track of the number of times each syscall has
++been called and initialize all elements to 0
++*/
++int global_syscall_count[NSYSCALLS] = {0};
++
+ // Fetch the uint64 at addr from the current process.
+ int
+ fetchaddr(uint64 addr, uint64 *ip)
+@@ -101,6 +107,7 @@ extern uint64 sys_unlink(void);
+ extern uint64 sys_link(void);
+ extern uint64 sys_mkdir(void);
+ extern uint64 sys_close(void);
++extern uint64 sys_getcnt(void); // Add the prototype for the new syscall
+ 
+ // An array mapping syscall numbers from syscall.h
+ // to the function that handles the system call.
+@@ -126,6 +133,7 @@ static uint64 (*syscalls[])(void) = {
+ [SYS_link]    sys_link,
+ [SYS_mkdir]   sys_mkdir,
+ [SYS_close]   sys_close,
++[SYS_getcnt]  sys_getcnt, // Add the new syscall to the array
+ };
+ 
+ void
+@@ -133,9 +141,14 @@ syscall(void)
+ {
+   int num;
+   struct proc *p = myproc();
+-
+   num = p->trapframe->a7;
+   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
++    // Increment the global counter for the corresponding syscall
++    global_syscall_count[num-1]++;
++    for (int i = 0; i < NSYSCALLS; i++) {
++      // Update the process's syscall count
++      p->syscall_count[i] = global_syscall_count[i]; 
++    }
+     // Use num to lookup the system call function for num, call it,
+     // and store its return value in p->trapframe->a0
+     p->trapframe->a0 = syscalls[num]();
+diff --git a/xv6-riscv/kernel/syscall.h b/xv6-riscv-modified/kernel/syscall.h
+index bc5f356..ec30885 100644
+--- a/xv6-riscv/kernel/syscall.h
++++ b/xv6-riscv-modified/kernel/syscall.h
+@@ -20,3 +20,4 @@
+ #define SYS_link   19
+ #define SYS_mkdir  20
+ #define SYS_close  21
++#define SYS_getcnt 22
+diff --git a/xv6-riscv/kernel/sysfile.c b/xv6-riscv-modified/kernel/sysfile.c
+index 16b668c..9c234c5 100644
+--- a/xv6-riscv/kernel/sysfile.c
++++ b/xv6-riscv-modified/kernel/sysfile.c
+@@ -503,3 +503,19 @@ sys_pipe(void)
+   }
+   return 0;
+ }
++
++// Add the new syscall function, sys_getcnt, to the kernel
++/* It should return the number of times the syscall with the number passed as 
++   an argument has been called by the calling process. If the syscall number 
++   is invalid, return -1.*/
++uint64
++sys_getcnt(void)
++{
++  int syscall_num;
++  argint(0, &syscall_num);
++  if (syscall_num > 0 && syscall_num <= NSYSCALLS) {
++    return myproc()->syscall_count[syscall_num-1];
++  } else {
++    return -1; 
++  }
++}
+diff --git a/xv6-riscv-modified/user/getcnt.c b/xv6-riscv-modified/user/getcnt.c
+new file mode 100644
+index 0000000..ce2e16d
+--- /dev/null
++++ b/xv6-riscv-modified/user/getcnt.c
+@@ -0,0 +1,23 @@
++#include "kernel/types.h"
++#include "kernel/stat.h"
++#include "user/user.h"
++
++// Fetch the number of times a syscall has been called
++int
++main(int argc, char *argv[])
++{
++    if (argc != 2) {
++        fprintf(2, "Usage: getcnt <syscall number>\n");
++        exit(1);
++    }
++    int syscall_number = atoi(argv[1]);
++    if (syscall_number <= 0 || syscall_number > 22) {
++        fprintf(2, "Invalid syscall number.\n");
++        exit(1);
++    }
++    int count = getcnt(syscall_number);
++    printf("Syscall %d has been called %d times.\n", syscall_number, count);
++
++    exit(0);
++
++}
+diff --git a/xv6-riscv/user/user.h b/xv6-riscv-modified/user/user.h
+index 4d398d5..53331a5 100644
+--- a/xv6-riscv/user/user.h
++++ b/xv6-riscv-modified/user/user.h
+@@ -22,6 +22,7 @@ int getpid(void);
+ char* sbrk(int);
+ int sleep(int);
+ int uptime(void);
++int getcnt(int); // Add the prototype for the new syscall
+ 
+ // ulib.c
+ int stat(const char*, struct stat*);
+diff --git a/xv6-riscv/user/usys.pl b/xv6-riscv-modified/user/usys.pl
+index 01e426e..d9a837e 100755
+--- a/xv6-riscv/user/usys.pl
++++ b/xv6-riscv-modified/user/usys.pl
+@@ -36,3 +36,4 @@ entry("getpid");
+ entry("sbrk");
+ entry("sleep");
+ entry("uptime");
++entry("getcnt");

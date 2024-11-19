@@ -1,0 +1,63 @@
+Relatório Trabalho Prático 0: Shell Básico
+
+1. Termo de compromisso
+
+Os membros do grupo afirmam que todo o código desenvolvido para este trabalho é de autoria própria.  Exceto pelo material listado no item 3 deste relatório, os membros do grupo afirmam não ter copiado material da Internet nem obtiveram código de terceiros.
+
+2. Membros do grupo e alocação de esforço
+
+Preencha as linhas abaixo com o nome e o e-mail dos integrantes do grupo.  Substitua XX pela contribuição de cada membro do grupo no desenvolvimento do trabalho.
+
+Thaís Ferreira da Silva <thaisfdasilva159@gmail.com> 50%
+Ana Luisa Araujo Bastos <alab@ufmg.br> 50%
+
+3. Referências bibliográficas
+
+Adicione aqui as referências bibliográficas.
+
+- Comandos Linux: Exec (https://www.linkedin.com/pulse/comandos-linux-exec-keven-s-lopes/)
+- Linux o que é pipe? O que são pipes e como usar? (https://semanickz.wordpress.com/2020/04/03/linux-aprender-comandos-gnu-e-pipes/#:~:text=O%20Pipe%20é%20um%20comando,o%20próximo%20como%20um%20pipeline.)
+- fork, exec, e daemon (https://embarcados.com.br/fork-exec-e-daemon/#fork)
+- Comandos Linux – Comando chdir (https://www.linuxforce.com.br/comandos-linux/comandos-linux-comando-chdir/)
+- Livro “xv6 book (Sep. 2014 draft)”
+
+4. Estruturas de dados
+
+Descreva e justifique as estruturas de dados e algoritmos utilizados em sua solução.
+
+--------------------------------------
+
+Task 1 - Reportar corretamente os erros
+
+O primeiro if verifica se temos como entrada “cd “ o que simboliza uma mudança de diretório. Se esse for o comando, troca-se o “\n” por um “\0” garantindo o final da palavra ao invés do final da linha de código.
+
+Depois disso, o segundo if chama-se o comando chdir com tudo o que foi digitado após o “cd “ e é necessário pois, é verificado se o endereço do novo diretório é válido. Ele vai gerar um erro se o diretório não existir ou se o usuário simplesmente não digitar nenhum endereço e imprimir “Arquivo ou diretório inexistente”.
+
+--------------------------------
+
+Task 2 - Implementação do exec:
+
+O execvp é responsável por substituir o processo atual pelo processo que queremos, assim pegamos o nome do programa a ser executado com ecmd->argv[0] e passamos para ele os argumentos necessários com ecmd->argv)
+
+-------------------------------
+
+Tesk 3 - Implementação do redir:
+
+Nessa parte precisamos realizar um redirecionamento no shell, desta forma, abrimos o arquivo especificado por rcmd->file com o modo específico de rcmd->mode e um octal das permissões do arquivo. Depois precisamos verificar se o arquivo for aberto (r >=0), e realizar o redirecionamento usando dup2(r, rcmd->fd) que é responsável por criar uma cópia do descritor de r e associar com o de rcmd->fd. 
+
+Em caso de erro nesses dois processos é necessário retornar exit(-1) para reportar o erro
+
+Obs. o número utilizado na função open foi obtida através do chatGPT, não entendemos qual int seria necessário colocar para que as permissões corretas fossem utilizadas.
+
+----------------------------
+
+Tesk 4 - Comando com Pipes:
+
+Pipes serve para que possamos executar 2 ou mais comandos ao mesmo tempo, de forma que a saída de um vai para a entrada do outro. Dessa forma precisamos converter o comando recebido para um comando específico do pipe usando pcmd = (struct pipecmd*)cmd e depois criar o pipe com pipe(p). A partir daí usamos o fork para criar um processo filho idêntico ao pai para executar as duas tarefas.
+
+Se a chamada fork1() retorna 0 estamos trabalhando com o filho, se não for nenhum desses estamos trabalhando com o pai.
+
+Se estivermos lidando com o filho usamos o close(1) para fechar o descritor de arquivos padrão para saída de dados, redirecionamos a saída padrão (descritor de arquivo 1) para o descritor de escrita do pipe dup(p[1], 1) e fechamos o descritor de arquivos de leitura (o filho não vai usar mais) e escrita (associando a saida padrão) com close(p[0]) e close(p[1]). Por fim executamos o comando a esquerda do pipe com runcmd(pcmd->left).
+
+Já quando estamos no processo pai, temos que fazer o mesmo que o que foi feito pro filho, mas um pouco modificado. Usamos o close(0) para fechar o descritor de arquivos padrão para entrada de dados,  redirecionando a entrada padrão (descritor de arquivo 0) para o descritor de leitura do pipe com dup(p[0], 0), e fechamos o descritor de arquivos de leitura e escrita com close(p[0]) e close(p[1]).  Por fim executamos o comando a esquerda do pipe com runcmd(pcmd->right).
+
