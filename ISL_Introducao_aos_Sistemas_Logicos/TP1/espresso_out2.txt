@@ -1,0 +1,16 @@
+#gray -> binario
+#Numero de bits de entrada
+#Numero de bits de saida
+#Rotulos dos bits de entrada
+#Rotulos dos bits de saida
+#Entradas e saidas correspondentes
+b3 = (g3);
+
+b2 = (!g3&g2) | (g3&!g2);
+
+b1 = (!g3&g2&!g1) | (!g3&!g2&g1) | (g3&!g2&!g1) | (g3&g2&g1);
+
+b0 = (!g3&g2&!g1&!g0) | (!g3&!g2&g1&!g0) | (!g3&!g2&!g1&g0) | (!g3&g2&g1
+    &g0) | (g3&!g2&!g1&!g0) | (g3&g2&g1&!g0) | (g3&g2&!g1&g0) | (g3&!g2
+    &g1&g0);
+
