@@ -1,0 +1,1000 @@
+a [able] capable
+a [abnormal]
+a [absent]
+a [absolute] perfect or complete
+a [abstract] existing only in the mind
+a [abundant] plentiful
+a [academic]
+a [acceptable]
+a [accessible]
+a [accurate]
+a [active] vigorous
+a [acute]
+a [addicted] hooked
+a [adequate]
+a [aesthetic]
+a [afraid]
+a [aggressive]
+a [agile] nimble, spry, quick
+a [agricultural]
+a [alert]
+a [alive] live
+a [aloof] distant
+a [amber] yellowish
+a [ambiguous] equivocal
+a [ambitious]
+a [ample] sizable, capacious
+a [angry]
+a [annual] yearly
+a [anonymous]
+a [applied] concerned with concrete problems or data
+a [appropriate]
+a [arbitrary]
+a [archaeological]
+a [arrogant] self-important
+a [artificial] unreal, unnatural
+a [artistic]
+a [ashamed]
+a [asleep]
+a [assertive] self-assured
+a [astonishing] astounding, staggering
+a [attractive] pleasing to the eye or mind
+a [automatic] operating with minimal human intervention
+a [available] obtainable
+a [awake]
+a [aware] mindful
+a [awful] dreadful, terrible
+a [awkward]
+a [bad] immoral, evil
+a [bad] below average in quality or performance, defective
+a [bad] spoiled, spoilt, capable of harming
+a [balanced]
+a [bald] lacking hair
+a [bare] lacking its natural or customary covering
+a [basic] pertaining to a base or basis
+a [beautiful] possessing beauty
+a [bitter] acrimonious, resentful
+a [bitter] bitter-tasting
+a [black] achromatic
+a [black] without cream or sugar
+a [bland] tasteless, insipid, flavorless
+a [blank] empty, not filled in
+a [blind] unsighted
+a [blonde] light-haired
+a [bloody] covered with blood
+a [bold] fearless and daring
+a [brave] courageous, fearless
+a [broken] physically separated into pieces
+a [brown] having a brown color
+a [bureaucratic]
+a [busy]
+a [capable]
+a [careful]
+a [cautious]
+a [central] in or near a center
+a [certain] sure
+a [characteristic]
+a [charismatic] possessing a magnetic personality
+a [cheap] inexpensive
+a [cheerful]
+a [childish] infantile
+a [chronic]
+a [civic]
+a [civilian]
+a [classical]
+a [clean] free from dirt
+a [clear] free from clouds or mist or haze
+a [clear] well-defined
+a [close] close in relevance or relationship
+a [close] near
+a [closed] shut, unopen
+a [cold] physically cold
+a [cold] without human warmth or emotion
+a [color-blind] unable to distinguish colors
+a [colorful] vivid in color
+a [comfortable] comfy
+a [commercial]
+a [common] average or ordinary or usual
+a [common] belonging to a community
+a [common] mutual
+a [comparable]
+a [compatible]
+a [competent]
+a [competitive]
+a [complete] having every necessary part
+a [complex] complicated
+a [comprehensive] all-including
+a [concrete] material
+a [confident]
+a [conscious] aware
+a [conservative] resistant to change
+a [considerable]
+a [consistent]
+a [constant] steadfast, unwavering
+a [constant] unending, incessant
+a [constitutional] relating to a/the constitution
+a [constructive]
+a [content] contented
+a [continental] relating to a continent
+a [continuous] uninterrupted
+a [controversial]
+a [convenient]
+a [conventional] following accepted customs
+a [cool] neither warm or very cold in temperature
+a [cool] unenthusiastic, unfriendly, unresponsive
+a [cooperative] co-operative
+a [corporate]
+a [critical] tending to find errors and flaws
+a [critical] being in a state of crisis or emergency
+a [critical] vital urgently needed
+a [crude] unrefined, unprocessed
+a [crude] primitive
+a [cruel] brutal, barbarous
+a [cultural] relating to arts
+a [curious]
+a [current]
+a [cute] attractive
+a [daily]
+a [dangerous] unsafe
+a [dark] devoid of light
+a [dead] inanimate
+a [deadly] lethal
+a [deaf]
+a [decisive] determining
+a [decorative] cosmetic, ornamental
+a [deep] having great spatial extension downward
+a [definite] precise, explicit
+a [delicate] exquisitely fine and subtle
+a [delicate] fragile, frail, easily broken, sensitive
+a [democratic] based upon the principles of democracy
+a [dependent]
+a [desirable]
+a [different] unlike, dissimilar
+a [difficult] hard
+a [digital] discrete
+a [diplomatic] diplomatical, suave
+a [direct] without deviation or interruption
+a [dirty] soiled, unclean
+a [dirty] obscene, indecent
+a [discreet] keeping private, prudent, restrained
+a [distant] separated in space or time
+a [distinct] easy to perceive
+a [domestic] concerning the internal affairs of a nation
+a [domestic] relating to the home
+a [dominant] exercising influence or control
+a [dramatic] pertaining to theater
+a [dry] free from liquid or moisture
+a [due] owed
+a [dull] not having a sharp edge or point
+a [dull] boring, lacking in liveliness or animation
+a [dynamic] dynamical, characterized by action
+a [eager]
+a [early]
+a [easy] posing no difficulty
+a [economic] relating to economics
+a [educational]
+a [effective] effectual, efficacious
+a [efficient]
+a [electronic]
+a [elegant] refined, tasteful
+a [eligible]
+a [articulate] eloquent, well-spoken
+a [emotional]
+a [empirical] empiric, derived from experiment and observation
+a [empty]
+a [encouraging]
+a [enjoyable]
+a [enthusiastic]
+a [environmental] relating to the external surroundings
+a [equal] like, equivalent, same
+a [essential] basic and fundamental
+a [established] set up or accepted
+a [eternal] everlasting, perpetual, unending
+a [ethical]
+a [ethnic] cultural
+a [even] level, flush
+a [even] divisible by two
+a [exact] precise
+a [excited]
+a [exciting]
+a [exclusive] excluding much or all
+a [exotic] foreign, alien
+a [exotic] unusual, strikingly strange
+a [expected]
+a [expensive]
+a [experienced] knowledgeable
+a [experimental]
+a [explicit] expressed
+a [express] without unnecessary stops
+a [external]
+a [extinct] non-existent, not surviving
+a [extraordinary]
+a [fair] impartial
+a [faithful] sexually trustworthy
+a [false] not in accordance with fact or reality
+a [familiar] well known
+a [far] at a long distance
+a [fashionable] stylish
+a [fast] at a rapid tempo
+a [fastidious] finicky
+a [fat] having much flesh, especially fat
+a [favorable] encouraging, approving
+a [federal]
+a [feminine] womanly
+a [financial] fiscal
+a [fine] small-grained or smooth
+a [finished]
+a [finished] ruined
+a [first] initial
+a [first-hand] direct
+a [flat] horizontally level
+a [flawed] imperfect, blemished, faulty
+a [flexible] bendable
+a [foolish]
+a [formal] adhering to traditional standards
+a [forward] at, near or directed toward the front
+a [fragrant] pleasant-smelling
+a [frank] candid, blunt, forthright
+a [free] able to act at will
+a [free] complimentary, costless, gratis
+a [free] not occupied
+a [frequent]
+a [fresh] recently made, produced, or harvested
+a [fresh] insolent, impertinent, impudent, sassy
+a [friendly] befitting a friend
+a [frozen] unthawed
+a [full] containing as much as is possible
+a [full] replete, filled to satisfaction with food
+a [full-time]
+a [functional] designed for or capable of a particular function
+a [funny] amusing, laughable
+a [general] applying to most members of a category
+a [generous]
+a [genetic] genetical
+a [genuine] not fake or counterfeit
+a [geological]
+a [glad]
+a [glorious]
+a [good] beneficial, salutary
+a [good] just, upright, virtuous
+a [gradual] proceeding in small stages
+a [grand] luxurious, opulent, sumptuous
+a [graphic] explicit, descriptive
+a [graphic] pictorial, lifelike, vivid
+a [grateful] thankful
+a [great] outstanding, very valuable
+a [great] large in size, number or extent
+a [green] unripe, unripened
+a [gregarious] sociable
+a [handy] easy to use
+a [happy]
+a [hard] not yielding to pressure
+a [harmful] noxious
+a [harsh] coarse, large-grained or rough to the touch
+a [healthy] fit
+a [heavy] of great physical weight
+a [helpful]
+a [helpless] incapacitated
+a [high] greater than normal in degree or intensity or amount
+a [hilarious] uproarious
+a [historical]
+a [holy]
+a [homosexual] gay
+a [honest] sincere
+a [honorable]
+a [horizontal]
+a [hostile] characterized by enmity or ill will
+a [hot] being of high temperature
+a [hot] marked by intensity, vehemence, passion
+a [huge] immense, vast
+a [human]
+a [hungry]
+a [ignorant] lacking basic knowledge, naive, unsophisticated
+a [illegal]
+a [immune] resistant
+a [imperial] relating to an empire
+a [implicit] inexplicit
+a [important] significant
+a [impossible]
+a [impressive]
+a [inadequate]
+a [inappropriate] not suitable
+a [incapable] incompetent
+a [incongruous] discrepant
+a [incredible] unbelievable
+a [independent]
+a [indigenous]
+a [indirect] not direct in manner or language
+a [indoor] inside
+a [industrial]
+a [inevitable]
+a [infinite] having no limits or boundaries in time or space
+a [influential]
+a [informal]
+a [inner]
+a [innocent] guiltless, clean-handed
+a [insufficient]
+a [integrated] not segregated
+a [intellectual]
+a [intense]
+a [interactive] synergistic
+a [interesting]
+a [intermediate] lying between two extremes
+a [internal]
+a [international]
+a [invisible] unseeable
+a [irrelevant]
+a [jealous] covetous, envious
+a [joint] united or combined
+a [judicial] juridical, juridic
+a [junior] younger or lower in rank
+a [just] equitable
+a [kind]
+a [large] big
+a [last] concluding, final, terminal
+a [late] belated, tardy
+a [latest] newest, up-to-date
+a [lazy] indolent, otiose, slothful, work-shy
+a [left] belonging to the political or intellectual left
+a [legal]
+a [legislative]
+a [liberal] tolerant of change
+a [light] of little weight
+a [light] light-colored
+a [light] bright, emitting light
+a [likely] probable, plausible
+a [limited] small in range or scope
+a [linear] one-dimensional
+a [liquid]
+a [literary]
+a [live] unrecorded
+a [lively]
+a [logical]
+a [lonely] alone, lone, solitary
+a [long] of great spatial extension
+a [long] of relatively great duration
+a [loose] not tight, constrained or constricted
+a [lost] no longer in your possession or control
+a [lost] spiritually or physically doomed or destroyed
+a [loud] characterized by sound of great volume
+a [low] being at small elevation
+a [depressed] blue
+a [loyal]
+a [lucky]
+a [magnetic] relating to magnetism
+a [main] chief, primary, principal
+a [major] greater in scope or effect
+a [major] of full legal age
+a [manual] requiring human effort
+a [marine] nautical, maritime, relating to the sea
+a [married]
+a [mathematical]
+a [mature] having reached full natural growth or development
+a [mature] ripe, fully developed and ready to be eaten
+a [maximum] maximal
+a [meaningful]
+a [mechanical] using a mechanism
+a [medieval] from the Middle Ages
+a [memorable]
+a [mental]
+a [middle-class]
+a [mild] moderate
+a [military]
+a [minimum] minimal
+a [minor] lesser in scope or effect
+a [miserable] abject, scummy, contemptible
+a [mobile] moving or capable of moving readily
+a [modern]
+a [modest] not offensive to sexual mores
+a [molecular]
+a [monstrous] atrocious, heinous
+a [monstrous] grotesque
+a [monthly]
+a [moral] relating to principles of right and wrong
+a [moving] arousing deep emotion
+a [multiple]
+a [municipal]
+a [musical] talented in or devoted to music
+a [mutual] reciprocal
+a [narrow] not wide spatially
+a [narrow] narrow-minded
+a [national] relating to a nation or country
+a [native] belonging to one by birth
+a [necessary]
+a [negative] disconfirming
+a [negative] reckoned in a direction opposite to positive
+a [nervous] neural
+a [nervous] skittish
+a [neutral] of no distinctive quality
+a [new] recently created, unused or little used
+a [new] unfamiliar
+a [nice]
+a [noble] having elevated character
+a [noble] belonging to hereditary aristocracy
+a [noisy]
+a [normal] conforming with a norm or standard
+a [notorious] ill-famed, infamous
+a [nuclear] atomic
+a [obese] overweight
+a [objective] nonsubjective
+a [obscure] unknown
+a [obvious]
+a [occupational]
+a [odd]
+a [offensive] unpleasant or disgusting
+a [offensive] for the purpose of attack
+a [official] having official authority
+a [old] elderly, having lived for a relatively long time
+a [open] affording free passage
+a [open] overt
+a [operational] pertaining to a process
+a [opposed] being in opposition
+a [optimistic]
+a [optional]
+a [oral] of or involving the mouth
+a [ordinary] not exceptional
+a [organic]
+a [original] fresh, unusual, first
+a [orthodox] adhering to what is commonly accepted
+a [other] not the same
+a [outer] being on the outside
+a [outside] outdoor, out-of-door
+a [painful]
+a [parallel] equidistant and not intersecting
+a [paralyzed] paralytic, unable to move
+a [parental]
+a [particular] finicky, fussy
+a [particular] peculiar, special
+a [part-time]
+a [passionate]
+a [passive] inactive
+a [past] earlier than the present time
+a [patient]
+a [peaceful]
+a [perfect] complete, without defect
+a [permanent] lasting
+a [persistent] lasting
+a [personal] concerning a particular person
+a [petty] small-minded
+a [philosophical]
+a [physical] involving the body
+a [plain] simple
+a [pleasant] delightful
+a [polite] courteous
+a [political]
+a [poor] characterized by poverty
+a [popular] regarded with great favor, approval, or affection
+a [portable]
+a [positive] accepting, confirming
+a [possible] potential
+a [powerful]
+a [practical] concerned with actual use or practice
+a [practical] efficient
+a [precise]
+a [predictable]
+a [pregnant]
+a [premature] untimely
+a [present] intermediate between past and future
+a [present] being here
+a [presidential] relating to a president or presidency
+a [primary] of first rank or importance or value
+a [private] concerning things personal
+a [privileged]
+a [productive] generative
+a [professional]
+a [profound] deep
+a [progressive] favoring or promoting progress
+a [prolonged]
+a [proper] suitable
+a [proportional]
+a [proud] feeling self-respect
+a [provincial] characteristic of the provinces
+a [public] not private
+a [pure] having no faults, sinless
+a [pure] free of extraneous elements of any kind
+a [qualified] meeting the standards and requirements
+a [quantitative]
+a [quiet] silent
+a [quiet] quiescent
+a [racial]
+a [random] arbitrary
+a [rare] infrequent, uncommon
+a [rational] based on reasoning
+a [raw] not treated with heat
+a [ready] prepared
+a [real] actual, existent, being or occurring in fact or actuality
+a [real] actual, genuine
+a [realistic]
+a [reasonable] sensible
+a [reckless] foolhardy
+a [regional]
+a [regular] in accordance with fixed order or procedure
+a [related] connected by kinship
+a [related] connected logically or causally
+a [relative] not absolute
+a [relevant]
+a [reliable] dependable
+a [religious]
+a [representative] standing for something else
+a [resident] living in a particular place
+a [residential]
+a [respectable] worthy of respect
+a [responsible] held accountable, worthy of trust
+a [restless] antsy, itchy, fidgety
+a [restricted]
+a [retired] no longer active in your work
+a [revolutionary] advocating or engaged in revolution
+a [rich] possessing material wealth
+a [right] correct
+a [romantic] amatory, amorous
+a [rotten] decayed, rotted
+a [rotten] crappy, lousy, shitty, stinking, stinky
+a [rough] unsmooth
+a [round] circular
+a [rural]
+a [sacred] concerned with religion or religious purposes
+a [sad]
+a [safe] free from danger
+a [satisfactory]
+a [satisfied] quenched, slaked
+a [scientific]
+a [seasonal] occurring at a particular season
+a [seasonal] occurring at or dependent on a particular season
+a [secondary]
+a [secular] laic, lay
+a [secure] protected
+a [senior] older or higher in rank
+a [sensitive] having acute mental or emotional sensibility
+a [separate] independent
+a [serious] sober
+a [sexual]
+a [shallow] lacking physical depth
+a [shallow] lacking depth of intellect or knowledge or feeling
+a [sharp] having a thin edge or sharp point
+a [short] having little length
+a [short] of limited duration
+a [shy] timid, diffident
+a [sick] ill
+a [similar] alike, like
+a [single] unmarried
+a [single] individual, separate
+a [skilled] skillful
+a [slippery] slippy
+a [slow] not moving quickly
+a [small] little
+a [smart] clever, bright
+a [smooth] having a surface free from roughness
+a [social] living together or enjoying life in communities
+a [socialist] socialistic
+a [soft] lacking in hardness
+a [soft] relatively low in volume
+a [soft] nonalcoholic
+a [solar]
+a [solid] neither liquid nor gaseous
+a [solid] entirely of one substance with no holes inside
+a [sophisticated]
+a [sound] in good condition
+a [sour] having a sharp biting taste
+a [spatial]
+a [specified]
+a [spontaneous] self-generated
+a [square] having four equal sides and four right angles
+a [stable] resistant to change
+a [standard] conforming to a standard of measurement
+a [statistical]
+a [steady]
+a [steep] having a sharp inclination
+a [sticky] gluey, glutinous, gummy
+a [muggy] sticky, steamy
+a [still] inactive, motionless, static
+a [straight] square, honest, fair, decent
+a [straight] free from curves or angles
+a [strange] unusual
+a [strategic] strategical
+a [strict] severe, nonindulgent
+a [strong] potent
+a [strong] hard, having a high alcoholic content
+a [strong] firm
+a [strong] secure, unattackable
+a [structural]
+a [stubborn] obstinate
+a [stunning] strikingly beautiful or attractive
+a [stupid]
+a [subjective]
+a [subsequent]
+a [successful]
+a [sudden]
+a [sufficient]
+a [superior] of high or superior quality
+a [supplementary] auxiliary, subsidiary
+a [surprised]
+a [surprising]
+a [sweet] sweet-tasting
+a [sympathetic] appealing, likeable
+a [systematic] characterized by order and planning
+a [talented] gifted
+a [talkative] chatty, gabby, garrulous
+a [tall]
+a [tasty] delicious
+a [technical]
+a [temporary] impermanent
+a [tender] easy to cut or chew
+a [tender] gentle, sympathetic, feeling
+a [tense] taut, rigid, stretched tight
+a [tense] in a state of physical or nervous tension
+a [terminal] endmost
+a [thick] of a specific thickness
+a [thick] dense in consistency
+a [thin] lean
+a [thirsty] needing or desiring to drink
+a [thoughtful] considerate, showing concern
+a [tidy] neat, orderly, clean
+a [tight] constrained, constricted, constricting
+a [tired] fatigued
+a [tolerant] respecting others
+a [tough] tough, hard, rough
+a [tough] not given to gentleness or sentimentality
+a [toxic]
+a [traditional]
+a [transparent] see-through, sheer
+a [trivial] banal, commonplace
+a [tropical] typical of the tropics
+a [true] consistent with fact or reality
+a [typical]
+a [ugly]
+a [ultimate]
+a [unanimous] in complete agreement
+a [unaware] unwitting
+a [uncomfortable]
+a [uneasy]
+a [unemployed]
+a [unexpected]
+a [unfair] partial, biased
+a [unfortunate] not favored by fortune
+a [uniform] unvarying
+a [unique] unequaled, unparalleled
+a [global] universal, worldwide
+a [unlawful] illegitimate, illicit
+a [unlike] unequal
+a [unlikely] improbable
+a [unpleasant] disagreeable
+a [urban]
+a [useful] utile
+a [useless]
+a [usual]
+a [vacant]
+a [vague] undefined
+a [vain] self-conceited, swollen-headed
+a [valid] well grounded in logic or truth
+a [valuable]
+a [varied]
+a [verbal]
+a [vertical] perpendicular
+a [viable] feasible, practicable, workable
+a [vicious]
+a [vigorous] strong physically or mentally
+a [violent]
+a [visible] seeable
+a [visual] ocular, optic, optical
+a [vocational]
+a [voluntary]
+a [vulnerable]
+a [warm] producing a comfortable degree of heat
+a [warm] friendly and responsive
+a [weak] having little physical or spiritual strength
+a [weekly]
+a [welcome]
+a [well] in good health
+a [wet]
+a [white] achromatic
+a [white] caucasian
+a [whole] including all components
+a [wild] untamed
+a [wild] marked by lack of restraint or control
+a [wise]
+a [written]
+a [wrong] contrary to conscience or morality or law
+a [wrong] based on error
+a [young] youthful
+n [abbey] monastery
+n [ability]
+n [abortion] termination pregnancy
+n [absence] failure to be present
+n [absorption] preoccupation, engrossment
+n [absorption] soaking up
+n [absorption] social assimilation
+n [abuse] maltreatment, ill-treatment
+n [abuse] insult
+n [academy] learned establishment
+n [accent] speech pattern
+n [acceptance] adoption, espousal, favorable reception
+n [access] entree, accession, admittance
+n [access] right to obtain or make use of
+n [accident] fortuity, chance event
+n [accident] mishap
+n [account] explanation
+n [account] accounting, account statement
+n [accountant] comptroller, controller
+n [accumulation] accretion
+n [achievement] accomplishment
+n [acid] water-soluble compound with sour taste
+n [acquaintance] familiarity, personal knowledge
+n [acquaintance] familiar person
+n [acquisition] possession
+n [act] human action, human activity
+n [act] subdivision of a play or opera or ballet
+n [action] legal action
+n [action] military action
+n [action] series of events that form a plot
+n [activity] activeness, trait of being active
+n [addition] summation, plus
+n [addition] add-on, improver
+n [address] place where a person or organization can be found
+n [administration] presidency
+n [administrator]
+n [admiration] esteem
+n [admission] acknowledgment
+n [admission] entrance fee
+n [adoption] child adoption
+n [adult] grownup
+n [advance] cash advance
+n [advantage] benefit
+n [adventure] escapade, risky venture
+n [advertising] ad, advertisement
+n [advice] proposal for an appropriate course of action
+n [adviser] advisor, consultant
+n [advocate] proponent
+n [affair] affaire, intimacy, liaison, involvement
+n [affinity] natural attraction
+n [affinity] kinship
+n [afternoon]
+n [age] how long something has existed
+n [old age] years
+n [age] historic period
+n [agency] business that serves other businesses
+n [agenda] order of business
+n [agent] representative who acts on behalf of others
+n [agent] federal agent
+n [agony] torment
+n [agreement] accord
+n [agriculture] farming, husbandry
+n [aid] economic aid
+n [AIDS] acquired immune deficiency syndrome
+n [air] mixture of gases
+n [aircraft]
+n [airline]
+n [airport]
+n [aisle] passage between seats or supermarket shelves
+n [alarm] warning device, alarm system
+n [alarm] alarm clock
+n [alarm] dismay, consternation, fear
+n [album] book of blank pages
+n [album] record album
+n [alcohol] alcoholic beverage, intoxicant, inebriant
+n [allocation] allotment, share
+n [allowance] money allowed or granted
+n [ally] friendly nation
+n [ally] friend
+n [altar]
+n [aluminium] aluminum, Al, silvery metal
+n [amateur]
+n [ambiguity] equivocalness
+n [ambition] ambitiousness
+n [ambulance]
+n [amendment]
+n [analogy]
+n [analysis] psychoanalysis
+n [analyst] psychoanalyst
+n [angel] spiritual being
+n [anger] ire
+n [angle] slant, bias
+n [angle] space between two lines
+n [animal] animate being, beast, brute, creature, fauna
+n [ankle] ankle joint
+n [anniversary] day of remembrance
+n [announcement] proclamation, declaration
+n [answer]
+n [ant] social insect
+n [anticipation] expectancy
+n [anxiety] anxiousness
+n [apathy] absence of emotion or enthusiasm
+n [apology] expression of regret
+n [apparatus] setup, equipment
+n [appeal] appealingness, charm
+n [appeal] solicitation
+n [appearance] visual aspect
+n [appendix] body part
+n [appendix] supplementary material
+n [appetite] craving
+n [apple] fruit with red, yellow or green skin
+n [applicant]
+n [application] practical application
+n [application] verbal or written request for assistance or employment or admission
+n [appointment] job, post
+n [approval] blessing
+n [aquarium] fish tank, marine museum
+n [arch] archway
+n [architecture] building design
+n [archive] archives
+n [area] expanse, surface area
+n [arena] place for spectacles
+n [argument] argumentation, debate
+n [arm] human limb
+n [armchair]
+n [army] ground forces
+n [arrangement] placement
+n [arrow] projectile
+n [arrow] pointer, indicator
+n [art] artistic creation, artistic production
+n [article] nonfictional prose forming an independent part of a publication
+n [artist] creative person
+n [ash] residue from a fire
+n [aspect] facet
+n [assault] physical attack
+n [rape] rape, violation, assault, ravishment
+n [assembly] assemblage, gathering of people
+n [assembly] fabrication, construction
+n [assertion]
+n [assessment] judgment, judgement
+n [assessment] appraisal
+n [asset] plus, valuable quality
+n [assignment] task
+n [association] mental connection
+n [association] formal organization of people
+n [association] affiliation
+n [assumption] premise, premiss
+n [assurance]
+n [asylum] refuge, sanctuary, shelter
+n [athlete] jock, sportive person
+n [atmosphere] envelope of gases
+n [atmosphere] ambiance, ambience
+n [atom]
+n [attachment] supplementary part
+n [attachment] affection, fondness
+n [attack] onslaught, physical attack
+n [attack] strong criticism
+n [attention] faculty or power of mental concentration
+n [attic] loft, garret
+n [attitude] mental attitude
+n [attraction] attractiveness
+n [attraction] entertainment offered to the public
+n [attraction] physical force
+n [auction] auction sale
+n [audience] spectators, listeners
+n [auditor] student
+n [aunt] auntie, relative
+n [authority] expert whose views are taken as definitive
+n [authority] persons who exercise administrative control
+n [autonomy] self-sufficiency, personal independence
+n [avenue] boulevard
+n [average] norm
+n [aviation] operation of aircraft
+n [award] prize
+n [axis] axis of rotation
+n [baby] babe, infant
+n [back] rear, side that goes last or is not normally seen
+n [back] spinal column, vertebral column, spine, backbone
+n [background] social heritage
+n [background] ground, part of a scene behind objects
+n [background] setting context
+n [bacon] pork
+n [suitcase] bag, luggage
+n [bag] supple container
+n [bail]
+n [balance] proportion, proportionality
+n [balance] equality between credit and debit
+n [balance] state of equilibrium
+n [balcony]
+n [ball] object that is hit or thrown or kicked in games
+n [ball] formal dance
+n [ball] globe, orb, object with a spherical shape
+n [ballet] dance
+n [balloon]
+n [ballot] voting document
+n [ban] prohibition, proscription
+n [banana] elongated crescent-shaped yellow fruit
+n [band] banding, stripe
+n [band] ring, jewelry
+n [band] range of frequencies between two limits
+n [band] instrumentalists
+n [bang] clap, eruption, blast, bam
+n [bank] depository financial institution
+n [bank] sloping land
+n [bankruptcy]
+n [banner] streamer
+n [bar] rigid piece of metal or wood
+n [bar] barroom, saloon
+n [bar] horizontal rod that serves as a support for gymnasts
+n [bar] legal profession
+n [bark] tree covering
+n [barrel] cask
+n [barrel] gun barrel
+n [barrier] separator obstructing vision or access
+n [base] pedestal, stand
+n [base] flat bottom on which something sits
+n [base] bottom side of a geometric figure
+n [baseball] baseball game
+n [basin] washbasin, washbowl, washstand, lavatory
+n [basis] base, foundation, fundament
+n [basket] handbasket
+n [basketball] hoops, basketball game
+n [bat] nocturnal mouselike mammal
+n [bathtub] bath, bathing tub, tub
+n [bathroom] bath, toilet, lavatory
+n [battery] assault
+n [battery] electric battery
+n [battle] conflict, fight, engagement
+n [battlefield] battleground, field of battle, field
+n [bay] indentation of a shoreline
+n [beach] shore
+n [beam] long thick piece of wood, metal or concrete
+n [beam] light beam, ray
+n [bean] edible bean
+n [bear] omnivorous mammal
+n [beard] facial hair
+n [beat] pulse, pulsation, heartbeat
+n [bed] piece of furniture
+n [bed] plot of ground in which plants are growing
+n [bedroom] sleeping room
+n [bee] insect
+n [beef] meat
+n [beer] alcoholic beverage
+n [beginning] first part or section of something
+n [behavior] conduct
+n [belief] cognitive content held as true
+n [bell] doorbell, buzzer
+n [belly] abdomen, stomach
+n [belt] clothing accessory
+n [bench] long seat
+n [bench] workbench
+n [beneficiary] recipient
+n [benefit] welfare
+n [benefit] performance to raise money for a charitable cause
+n [berry] small edible fruit
+n [bet] wager
+n [Bible] Christian Bible, Book, Good Book, Holy Scripture
+n [motorcycle] motorbike, bike
+n [bill] beak
+n [bill] circular, handbill, broadside, broadsheet, flier
+n [bin] container
+n [biography] life story
+n [biology] plant and animal life
+n [bird] warm-blooded egg-laying vertebrate
+n [birthday] anniversary of the day someone is born
+n [biscuit] cookie
+n [bishop] clergyman
+n [bitch] female dog
+n [bitch] unpleasant woman
+n [snack] bite, collation, light meal
+n [bite] sting, insect bite
+n [black] total darkness, blackness
+n [blackmail] extortion
+n [blade] part of a knife
+n [blade] leaf blade
+n [blast] explosion
+n [block] city block
+n [block] cube
+n [blood]
+n [bloodshed] gore
+n [blow] powerful stroke
+n [blow] reversal, setback
+n [blue] blueness, color
+n [blue jean] jeans, denim pants
+n [board] gameboard
+n [board] committee having supervisory powers
+n [board] plank, stout length of sawn timber
+n [boat] a small vessel for travel on water
+n [body] organic structure, physical structure
+n [body] torso, trunk
+n [body] dead body
+n [bolt] type of screw that screws into a nut
+n [bolt] thunderbolt, bolt of lightning
+n [bomb] explosive device
+n [bomber] military aircraft
+n [bomber] person who plants bombs
+n [bond] shackle, hamper
+n [bond] bail
+n [bond] alliance
+n [bone] body part
+n [book] volume
+n [book] written work
