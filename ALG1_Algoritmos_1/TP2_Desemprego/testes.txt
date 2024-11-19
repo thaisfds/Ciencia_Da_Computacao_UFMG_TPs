@@ -1,0 +1,24 @@
+5 5 9
+Andre CFO
+Bruno RED
+Bruno SWE
+Maria CEO
+Maria CFO
+Maria CTO
+Paulo CFO
+Paulo CTO
+Pedro RED
+
+CFO 0
+RED 1 
+SWE 2
+CEO 3
+CTO 4
+
+
+  0 1 2 3 4
+A 1 0 0 0 0 0
+B 0 1 1 0 0 1
+M 1 0 0 1 1 3
+P 1 0 0 0 1 4
+P 0 1 0 0 0 x
