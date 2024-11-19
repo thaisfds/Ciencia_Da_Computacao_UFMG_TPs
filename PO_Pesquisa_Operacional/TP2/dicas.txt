@@ -1,0 +1,9 @@
+1. Ordenar e encaixar na primeira caixa
+3. Resolver direto usando a dica do professor que vc só faz uma coisa por dia
+4. Ordenar pelo tamanho da vizinhança e ir atribuindo a menor cor possível 
+
+1. Mesma coisa do Igor, chama First Fit Decreasing (FFD)
+2. Olho o no de menor grau e removo ele e os vizinhos ate nao ter mais nos
+3. So tem uma melhor coisa pra fazer no dia, passa por cada dia e decide o melhor
+4. Literalmente meti o louco e implementei um algoritmo chamado Recursive Largest First (RLF), nao recomendo kkkkkk mt trampo de implementar mas funciona bem, existem mais simples do q isso
+5. Ordenei os vertices em ordem crescente pela soma dos pesos das arestas deles. Removo o de soma mais negativo, repete de novo ate todo mundo ter soma positiva
