@@ -1,0 +1,97 @@
+Trabalho Prático 2 - RSSF
+
+Objetivo: comunicação entre sensores atraves de um server e vários clientes
+
+INICIO:
+- [x] Adaptar o código para funcionar com o novo protocolo
+- [x] Conexão ao servidor: ./client 127.0.0.1 51511 -type <temperature|humidity|air_quality> -coords <x> <y>
+- [x] Tratamento de erros da Conexão
+    - [x] Faltando argumentos -> Error: Invalid number of arguments
+    - [x] Argumento -type faltando -> Error: Expected '-type’ argument
+    - [x] Tipo de sensor não definido -> Error: Invalid sensor type
+    - [x] Argumento -coords faltando -> Error: Expected  '-coords' argument
+    - [x] Coordenadas fora do intervalo -> Error: Coordinates must be in the range 0-9
+    - [x] Após cada mensagem de erro, deve-se exibir também a seguinte mensagem padrão na linha de baixo: 
+            Usage: ./client <server_ip> <port> -type 
+            <temperature|humidity|air_quality> -coords <x> <y>
+
+
+1° MEDIÇÃO (aleatória):
+- [x] o sensor vai realizar sua medição, um valor aleatório dentro do intervalo
+    - Temperatura (ºC) -> 20.0 - 40.0 -> 5 segundos
+    - Humidade (%) -> 10.0 - 90.0 -> 7 segundos
+    - Qualidade do ar (μg/m³) -> 15.0 - 30.0 -> 10 segundos
+
+
+FUNCIONAMENTO (padrão publish/subscribe):
+- [x] gerenciar os tópicos -> enviar as mensagens para os sensores interessados
+- [x] sensores enviam suas medições periodicamente para o servidor
+- [x] servidor encaminha as mensagens para os servidores interessados
+- [x] sensores atualizam suas medições com base na proximidade e na diferença dos valores (3 mais proximos)
+    - 𝑛𝑜𝑣𝑎_𝑚𝑒𝑑𝑖çã𝑜 = 𝑚𝑒𝑑𝑖çã𝑜_𝑎𝑡𝑢𝑎𝑙 + 0.1 × (1 / 𝑑 + 1) x (𝑚𝑒𝑑𝑖çã𝑜_𝑟𝑒𝑚𝑜𝑡𝑎 − 𝑚𝑒𝑑𝑖çã𝑜_𝑎𝑡𝑢𝑎𝑙 ) 
+    - d = distancia euclidiana = raiz quadrada da soma das diferenças ao quadrado
+    - se o resultado passar do limite 10x10 deve ser arrumado pro valor mais proximo (maior ou menor)
+- [x] sensor deve manter a informação de seus vizinhos, todos os vizinhos para caso um caia do sistema
+    - identificar o proximo da fila
+    - substituir na lista de vizinhos mais proximos
+
+DESCOBERTA DINÂMICA DE SENSORES:
+- [x] quando um novo sensor entra na rede, ele pode começar recebendo medições de sensores
+      mesmo que não sejam seus vizinhos mais proximos, devido a falta de conhecimento inicial do ambiente
+    - [x] ajustar sua lista de vizinhos a cada nova mensagem, e prioriza as medições mais proximas
+
+EXIBIÇÃO DAS MENSAGENS:
+- [x] servidor exibe as mensagens recebidas de forma padronizada:
+    - log:
+      <type> sensor in (<x>,<y>)
+      measurement: <measurement>
+      <\n>
+- [x] cliente exibe todas as mensagens que chegam para ele, incluindo as suas próprias, e não exibe ao enviar
+    - log:
+      <type> sensor in (<x>,<y>)
+      measurement: <measurement>
+      action: <status>
+      <\n>
+- [ ] obs: medições da mesma coordenada do sensor não são consideradas como vizinho, e são descartadas
+- actions:
+    - [x] same location
+    - [x] correction of x
+    - [ ] removed
+    - [x] not  neighbor
+
+ENCERRAMENTO DE UM SENSOR (ctrl + C pra finalizar o sensor):
+- [x] servidor, exibe log padrão com medida negativa (-10000) e enviar para os sensores do mesmo tipo
+- [x] cliente deve remover o sensor de sua base de dados
+    - Devem exibir a action como removed
+
+
+OBS:
+- [x] servidor mantem o registro de todos os sensores conectados, incluindo coordenadas e tipo
+- [ ] sensores mantem a lista de vizinhos mais proximos, e atualiza em caso de queda
+- [ ] Apenas três tipos de sensores serão aceitos. Tipos diferentes resultam:
+    - em um erro
+    - impedimento da execução co cliente
+- [ ] Coordenadas são expecificadas ao iniciar o cliente e deve estar no intervalo [0,9]
+    - coordenadas invalidas (fora do intervalo ou não numericas) gera erro no cliente e não inicia
+- [ ] Cada tipo de sensor possui um tópico exclusivo onde se publica e recebe mensagens
+- [ ] Mensagens são transmitidas apenas para tipos iguais
+- [ ] Medições iniciais são aleatórias, e atualizações seguem a formula
+- [ ] Correção da medição é baseada nos 3 vizinhos mais proximos
+- [ ] Se não houver vizinhos a medição sempre é a mesma
+- [ ] Novos sensores podem usar medições de vizinhos mais distantes, atualizando seus vizinhos a medida que recebe novas mensagens
+- [ ] Medidas devem ser exibidas com até 4 casas decimais
+- [ ] Coordenadas do log devem estar no formato (x,y)
+- [ ] Testes com até 12 sensores simultâneos
+- [ ] Mensagens de erro especificas para parâmetros invalidos, impedindo o cliente de iniciar
+- [ ] Mais de um sensor podem ocupar o mesmo espaço de tipos iguais ou diferentes
+- [ ] Medidas do mesmo local não são utilizadas para atualização da medição, e nem são consideradas vizinhas
+- [ ] Deve funcionar para IPv4 e IPv6
+    IPv4:
+    - no terminal 1: ./server v4 51511 
+    - no  terminal  2:  ./client  127.0.0.1  51511  -type  temperature  -coords 1 1
+    - no  terminal  3:  ./client  127.0.0.1  51511  -type  air_quality  -coords 2 2
+    IPv6: 
+    - no terminal 1: ./server v6 51511 
+    - no terminal 2: ./client ::1 51511 -type humidity -coords 5 6
+    - no terminal 3: ./client ::1 51511 -type humidity -coords 6 5
+- [ ] uma nova thread deve ser criada para cada cliente conectado

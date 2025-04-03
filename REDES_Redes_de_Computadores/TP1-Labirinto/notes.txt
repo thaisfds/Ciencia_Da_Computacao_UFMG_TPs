@@ -1,0 +1,81 @@
+Trabalho Prático 1 - Servidor de Exploração de Labirintos
+
+Objetivo: criar uma versão de um jogo em que um cliente se conecta a um servidor e 
+caminhe em um labirinto, buscando a saída
+
+Servidor: manter e atualizar o estado do jogo repassando as informações para o jogador
+Cliente: enviar comandos para se mover e receber as informações sobre sua posição no 
+labirinto.
+
+TODO GERAL:
+- [x] criar a (struct action) a ser enviada e recebida entre cliente e servidor
+- [_] cadastrar comando a serem recebidos pelo servidor
+    - [x] comando start
+    - [x] comando move
+    - [x] comando map
+    - [_] comando hint
+    - [x] comando update
+    - [x] comando win
+    - [x] comando reset
+    - [x] comando exit
+- [x] cadastrar movimentos
+    - [x] comando 1 up
+    - [x] comando 2 right
+    - [x] comando 3 down
+    - [x] comando 4 left
+- [_] cadastrar erros
+    - [_] error: you cannot go this way
+    - [_] error: command not found
+    - [_] error: start the game first
+
+TODO START:
+- [x] servidor recebe um labirinto de 5x5 a 10x10
+    - [x] ./server v4 51511 -i input/in.txt
+- [x] cliente se conecta ao servidor
+    - [x] ./client 127.0.0.1 51511
+    - [x] servidor imprime client connected
+- [x] cliente envia um comando para iniciar a partida (start)
+- [x] servidor imprime starting new game
+
+TODO MOVE:
+- [x] servidor devolve quais movimentos o jogador pode fazer
+    - [x] preencher o vetor moves onde:
+            - o inicio deve conter os movimentos validos 1234
+            - depois temos uma sequencia de 0s até o final
+- [x] cliente imprime quais movimentos pode fazer
+      Possible moves: up, right, down, left
+- [x] cliente pode então enviar a direção para se mover
+      retornar o interiro equivalente
+- [x] servidor atualiza a posição do jogador (caso valido)
+- [x] servidor retorna quais movimentos o cliente pode fazer agora
+
+TODO MAP:
+- [x] cliente pode requisitar ver o mapa
+- [x] servidor retorna o labirinto com todas as regiões ocultas, exceto por onde o cliente passou
+    - [x] converter o labirinto para o labirinto oculto e enviar
+- [x] cliente recebe o labirinto oculto, transforma os dados e imprime
+
+TODO UPDATE:
+- [x] respostas do servidor devem vir do tipo update
+
+TODO WIN:
+- [x] cliente encontra a saida e se move
+- [x] servidor informa que o cliente venceu (retorna win)
+- [x] servidor devolve todo o labirinto revelado
+- [x] cliente imprime You escaped! com o labirinto revelado
+- [x] servidor encerra a partida
+    - [x] só aceitar comando reset e exit
+
+TODO RESET:
+- [x] volta para o inicio do labirinto
+- [x] servidor imprime starting new game
+
+TODO EXIT:
+- [x] cliente envia o comando de encerrar o jogo
+- [x] cliente é desconectado
+- [x] cliente é finalizado
+- [_] servidor imprime client disconnected
+
+TODO HINT (EXTRA):
+- [_] cliente solicita uma dica 
+- [_] servidor retorna uma lista de comando que resultem na saida
